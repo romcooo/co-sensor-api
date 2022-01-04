@@ -3,7 +3,7 @@
 (Examples [here](EXAMPLES.md))
 
 - /cities
-  - POST - creates a new "user city" (201), 403 (in case city with provided name already exists)
+  - POST - creates a new "user city" (204), 403 (in case city with provided name already exists)
     - use the city to authenticate on all other urls (username={cityName}, password={password})
   - PATCH - changes password (204) || 401
   

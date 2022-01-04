@@ -6,6 +6,7 @@ import net.romstu.at_sensor_api.persistence.entities.CityEntity;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class City {
     private String name;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
@@ -19,6 +20,7 @@ public class City {
     public String toString() {
         return "City{" +
                 "name='" + name + '\'' +
+                ", password=[protected]" +
                 '}';
     }
 }
